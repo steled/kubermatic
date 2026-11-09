@@ -43,6 +43,7 @@ func addCommands(cmd *cobra.Command, logger *logrus.Logger, versions kubermatic.
 		ListImagesCommand(logger, versions),
 		MirrorBinariesCommand(logger, versions),
 		LocalCommand(logger),
+		MaintenanceCommand(logger),
 	)
 }
 
